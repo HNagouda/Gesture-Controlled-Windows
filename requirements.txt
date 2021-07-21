@@ -1,0 +1,4 @@
+pynput
+mediapipe
+clipboard
+pydirectinput

@@ -76,7 +76,11 @@ To get a local copy up and running follow these simple steps.
 ## Usage
 
 * [Demo presentation](https://youtu.be/NQLZDLyJlf0)
-
+* Mouse functionality:
+   - To use cursor through gestures make the peace sign ✌
+   - Cursor tracking is based on the tip of the index finger
+   - To simulate left-click, join the 2 open fingers in the peace sign (index and middle) - It's like scissor motion 
+   
 <!-- CONTRIBUTING -->
 ## Contributing
 

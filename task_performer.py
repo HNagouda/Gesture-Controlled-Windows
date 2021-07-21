@@ -38,21 +38,21 @@ class perform_task:
             time.sleep(0.15)
      
         elif action == 'cursor':
-            x = (int(self.landmarks[8][1]) * 3) - ((int(self.landmarks[8][1]) * 3) % 10)
-            y = (int(self.landmarks[8][2]) * 3) - ((int(self.landmarks[8][2]) * 3) % 10)
+            x, y = self.landmarks[8][1]*1.2, self.landmarks[8][2]*2.25
 
             mouse.position = (x,y)
             
         elif action == 'click':
             if self.click == 0:
                 mouse.click(Button.left, 2)
+                time.sleep(0.15)
                 self.click += 1
 
         elif action == 'play_pause_vid':
             if self.play_pause_vid == 0:
                 print(action)
                 pyd.keyDown('space')
-                time.sleep(0.05)
+                time.sleep(0.15)
                 pyd.keyUp('space')
                 self.play_pause_vid += 1
         
@@ -60,7 +60,7 @@ class perform_task:
             if self.forward_vid == 0:
                 print(action)
                 pyd.keyDown('right')
-                time.sleep(0.05)
+                time.sleep(0.15)
                 pyd.keyUp('right')
                 self.forward_vid += 1
         
@@ -68,7 +68,7 @@ class perform_task:
             if self.rewind_vid == 0:
                 print(action)
                 pyd.keyDown('left')
-                time.sleep(0.05)
+                time.sleep(0.15)
                 pyd.keyUp('left')
                 self.rewind_vid += 1
 
@@ -76,7 +76,7 @@ class perform_task:
             if self.activate_subtitles == 0:
                 print(action)
                 pyd.keyDown('c')
-                time.sleep(0.05)
+                time.sleep(0.15)
                 pyd.keyUp('c')
                 self.activate_subtitles += 1
         
@@ -84,7 +84,7 @@ class perform_task:
             if self.full_screen == 0:
                 print(action)
                 pyd.keyDown('f')
-                time.sleep(0.05)
+                time.sleep(0.15)
                 pyd.keyUp('f')
                 self.full_screen += 1
 
@@ -115,5 +115,5 @@ class perform_task:
                 pyd.keyDown('prntscrn')
                 pyd.keyUp('prntscrn')
                 pyd.keyUp('alt')
-                time.sleep(0.05)
+                time.sleep(0.15)
                 self.screenshot += 1                

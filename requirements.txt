@@ -1,3 +1,4 @@
+opencv
 pynput
 mediapipe
 clipboard

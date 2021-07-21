@@ -54,10 +54,10 @@
 ## About The Project
 ### Built With
 
-* [OpenCV]()
-* [Mediapipe]()
-* [Pynput]()
-* [Pydirectinput]()
+* [OpenCV](https://opencv.org/)
+* [Mediapipe](https://mediapipe.dev/)
+* [Pynput](https://pynput.readthedocs.io/en/latest/index.html)
+* [Pydirectinput](https://github.com/learncodebygaming/pydirectinput)
 
 <!-- GETTING STARTED -->
 ## Getting Started
@@ -85,11 +85,7 @@ To get a local copy up and running follow these simple steps.
 <!-- USAGE EXAMPLES -->
 ## Usage
 
-Demo presentation: 
-
-
-<!-- ROADMAP -->
-
+* [Demo presentation](https://youtu.be/NQLZDLyJlf0)
 
 <!-- CONTRIBUTING -->
 ## Contributing

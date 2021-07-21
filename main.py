@@ -61,12 +61,13 @@ def main_run():
         success, img = cap.read()
 
         img = detector.draw_landmarks(img)
+        flipped_image = cv2.flip(img, 1)
         landmarks = detector.get_landmarks(img)
         
         if len(landmarks) != 0:
             run_gestures(landmarks)
                 
-        cv2.imshow("image", img)
+        cv2.imshow("image", flipped_image)
         cv2.waitKey(1)
 
 if __name__ == "__main__":

@@ -81,7 +81,7 @@ class perform_task:
                 print(action)
                 pyd.keyDown('ctrl')
                 pyd.keyDown('c')
-                time.sleep(0.05)
+                time.sleep(0.15)
                 pyd.keyUp('c')
                 pyd.keyUp('ctrl')
                 self.copy += 1    
@@ -91,7 +91,7 @@ class perform_task:
                 print(action)
                 pyd.keyDown('ctrl')
                 pyd.keyDown('v')
-                time.sleep(0.05)
+                time.sleep(0.15)
                 pyd.keyUp('v')
                 pyd.keyUp('ctrl')
                 self.paste += 1  
@@ -101,7 +101,7 @@ class perform_task:
                 print(action)
                 pyd.keyDown('alt')
                 pyd.keyDown('prntscrn')
-                time.sleep(0.05)
                 pyd.keyUp('prntscrn')
                 pyd.keyUp('alt')
+                time.sleep(0.05)
                 self.screenshot += 1                

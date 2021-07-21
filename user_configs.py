@@ -1,11 +1,9 @@
-# Currently binded gestures and features
-# NOTE: DNC = Do NOT Change
-
+# Currently binded gestures and functions
+# NOTE: As of now, there are only 13 gestures, you may remap the gestures to 
+# perform different functions
 class gesture_binds:
     actions = {
         # General Functionality
-        'open_palm': 'cursor', # DNC
-        'fist': 'mouse_click', # DNC
         'open_thumb': 'copy',
         'open_index': 'paste',
         'open_ring': 'screenshot',
@@ -17,7 +15,6 @@ class gesture_binds:
         'fold_ring': 'activate_subtitles',
         'fold_pinky': 'full_screen',
 
-
         # Open-Program Controls
         'fold_thumb_and_index': 'open_vscode',
         'fold_index_and_middle': 'open_discord',
@@ -26,15 +23,15 @@ class gesture_binds:
         'open_pinky': 'open_browser',
         }
 
+# Paths to your applications
 class paths:
     program_paths = {
-            'desktop': 'C:/users/harsh/Desktop',
-            'vscode': "C:/Users/harsh/AppData/Roaming/Microsoft/Windows/Start Menu/Programs/Visual Studio Code/Visual Studio Code.lnk",
-            'discord': "C:/Users/harsh/AppData/Roaming/Microsoft/Windows/Start Menu/Programs/Discord Inc/Discord.lnk",
+            'desktop': 'C:/users/____USER____/Desktop',
+            'vscode': "C:/Users/____USER____/AppData/Roaming/Microsoft/Windows/Start Menu/Programs/Visual Studio Code/Visual Studio Code.lnk",
+            'discord': "C:/Users/____USER____/AppData/Roaming/Microsoft/Windows/Start Menu/Programs/Discord Inc/Discord.lnk",
             'browser': "C:/ProgramData/Microsoft/Windows/Start Menu/Programs/Microsoft Edge.lnk",
-            'cmd': "C:/Users/harsh/AppData/Roaming/Microsoft/Windows/Start Menu/Programs/System Tools/Command Prompt.lnk",
-            'explorer': "C:/Users/harsh/AppData/Roaming/Microsoft/Windows/Start Menu/Programs/System Tools/File Explorer.lnk",
-            'powershell': "C:/Users/harsh/AppData/Roaming/Microsoft/Windows/Start Menu/Programs/Windows PowerShell/Windows PowerShell.lnk",
-            'spotify': "C:/Users/harsh/AppData/Roaming/Microsoft/Windows/Start Menu/Programs/Spotify.lnk"
-
+            'cmd': "C:/Users/____USER____/AppData/Roaming/Microsoft/Windows/Start Menu/Programs/System Tools/Command Prompt.lnk",
+            'explorer': "C:/Users/____USER____/AppData/Roaming/Microsoft/Windows/Start Menu/Programs/System Tools/File Explorer.lnk",
+            'powershell': "C:/Users/____USER____/AppData/Roaming/Microsoft/Windows/Start Menu/Programs/Windows PowerShell/Windows PowerShell.lnk",
+            'spotify': "C:/Users/____USER____/AppData/Roaming/Microsoft/Windows/Start Menu/Programs/Spotify.lnk"
     }

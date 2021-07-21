@@ -12,9 +12,10 @@ program_paths = user_configs.paths.program_paths
 mouse = mouseController()
 
 class perform_task:
-    def __init__(self, id, all_fingers_open, landmarks):
+    def __init__(self, id, all_fingers_open, landmarks, img_size):
         self.id = id
         self.landmarks = landmarks
+        self.img_size = img_size
         self.all_fingers_open = all_fingers_open
         self.clipboard_content = ''
         self.play_pause_vid = 0
@@ -25,6 +26,7 @@ class perform_task:
         self.paste = 0
         self.screenshot = 0
         self.full_screen = 0
+        self.click = 0
 
     def run_actions(self):
         action = actions[self.id]
@@ -34,7 +36,17 @@ class perform_task:
             program = action.split(sep='_')[1]
             os.startfile(program_paths[program])
             time.sleep(0.15)
-        
+     
+        elif action == 'cursor':
+            x = (int(self.landmarks[8][1]) * 3) - ((int(self.landmarks[8][1]) * 3) % 10)
+            y = (int(self.landmarks[8][2]) * 3) - ((int(self.landmarks[8][2]) * 3) % 10)
+
+            mouse.position = (x,y)
+            
+        elif action == 'click':
+            if self.click == 0:
+                mouse.click(Button.left, 2)
+                self.click += 1
 
         elif action == 'play_pause_vid':
             if self.play_pause_vid == 0:

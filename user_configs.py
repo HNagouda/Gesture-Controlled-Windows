@@ -1,8 +1,14 @@
 # Currently binded gestures and functions
-# NOTE: As of now, there are only 13 gestures, you may remap the gestures to 
+# NOTE: As of now, there are only 14 gestures, you may remap the gestures to 
 # perform different functions
+
+# NOTE: DNC = Do NOT Change
 class gesture_binds:
     actions = {
+        # Mouse Functionality
+        'open_index_middle': 'cursor', # DNC
+        'combine_index_middle': 'click', # DNC
+
         # General Functionality
         'open_thumb': 'copy',
         'open_index': 'paste',
@@ -19,7 +25,6 @@ class gesture_binds:
         'fold_thumb_and_index': 'open_vscode',
         'fold_index_and_middle': 'open_discord',
         'fold_middle_and_ring': 'open_spotify',
-        'fold_ring_and_pinky': 'open_powershell',
         'open_pinky': 'open_browser',
         }
 

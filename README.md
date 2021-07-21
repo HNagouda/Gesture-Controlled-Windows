@@ -1,20 +1,10 @@
-[![Contributors][contributors-shield]][contributors-url]
-[![Forks][forks-shield]][forks-url]
-[![Stargazers][stars-shield]][stars-url]
-[![Issues][issues-shield]][issues-url]
-[![MIT License][license-shield]][license-url]
-[![LinkedIn][linkedin-shield]][linkedin-url]
-
-
-
 <!-- PROJECT LOGO XYZ-->
 <br />
 <p align="center">
   <a href="https://github.com/HNagouda/Gesture-Controlled-Windows">
-    <img src="images/logo.png" alt="Logo" width="80" height="80">
   </a>
 
-  <h3 align="center">Gesture-Controlled-Windows</h3>
+  <h1 align="center">Gesture-Controlled-Windows</h3>
 
   <p align="center">
     OpenCV and Mediapipe based project for controlling basic windows functionalities
